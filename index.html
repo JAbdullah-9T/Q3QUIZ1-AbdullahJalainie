@@ -1,0 +1,105 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz 1</title>
+
+	<!--SETUP BOOTSTRAP: Link to Bookstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	
+	<!--Link to 35-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script>
+		var A = 20.37;
+		var B = 7.29;
+		function Arithmetic(){
+			document.getElementById("Expo").innerHTML = (A**B).toFixed();
+			document.getElementById("modulo").innerHTML = (A%B).toFixed();
+
+		}
+
+		function Comparison(){
+			document.getElementById("Compare1").innerHTML = (A==B);
+			document.getElementById('Compare2').innerHTML = (A>B)
+		}
+
+		function Logical(){
+			document.getElementById('logic1').innerHTML = ((A <= B) && (A >= B));
+			document.getElementById('logic2').innerHTML = ((A != B) || (A == B));
+		}
+	</script>
+
+
+
+</head>
+<body>
+
+<div class="container">
+	 <div class="row justify-content-center">
+	<div class="alert alert-danger alert-dismissible fade show">
+    	<button type="button" class="btn-close" data-bs-dismiss="alert" ></button>
+    	<strong>GIVEN:</strong>
+    	If A = 20.37 and B = 7.29, compute for the following: 
+	</div>
+	    <!-- Card 2 -->
+        	<div class="col-sm-3">
+           	 <div class="card" style="width: 100%;">
+               	 <div class="card-body">
+
+		<script type="text/javascript">
+			document.write("<h2>Arithmetic Operators</h2>")
+		</script>
+
+		<h5>Exponent: <span id="Expo"></span></h5>
+		<h5>Module: <span id="modulo"></span></h5>
+		<button onclick="Arithmetic()">Show Answer</button>
+
+	</div>
+   </div>
+  </div>
+
+	    <!-- Card 2 -->
+        	<div class="col-sm-3">
+           	 <div class="card" style="width: 100%;">
+               	 <div class="card-body">
+
+		<script type="text/javascript">
+			document.write("<h2>Comparison Operators</h2>")
+			
+		</script>
+
+		<h5>A == B: <span id="Compare1"></span></h5>
+		<h5>A > B: <span id="Compare2"></span></h5>
+		<button onclick="Comparison()">Show Answer</button>
+	</div>
+   </div>
+  </div>
+
+		<!-- Card 3 -->
+        	<div class="col-sm-3">
+           	 <div class="card" style="width: 100%;">
+               	 <div class="card-body">
+
+		<script type="text/javascript">
+			document.write("<h2>Logical Operators</h2>")
+		</script>
+		<h5>True or False: <span id="logic1"></span></h5>
+		<h5>True or False: <span id="logic2"></span></h5>
+		<button onclick="Logical()">Show Answer</button>
+
+
+
+
+</button>
+</div>
+<br/>
+
+
+
+
+</body>
+</html>
